@@ -34,7 +34,7 @@ public class ReservationFormController {
     @Autowired
     public ReservationFormController(ReservationService reservationService, ReservationValidator reservationValidator) {
         this.reservationService = reservationService;
-        this.reservationValidator=reservationValidator;
+        this.reservationValidator = reservationValidator;
     }
 
 

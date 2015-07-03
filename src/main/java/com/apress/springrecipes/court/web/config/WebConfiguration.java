@@ -36,7 +36,6 @@ import java.util.Map;
  * Configuration class to setup Spring MVC.
  *
  * @author Marten Deinum
- *
  */
 @Configuration
 @EnableWebMvc
@@ -75,7 +74,6 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
     }
 
 
-
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addFormatterForFieldType(Date.class, new DateFormatter("yyyy-MM-dd"));
@@ -88,7 +86,9 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
     }
 
     @Bean
-    public ExtensionInterceptor summaryReportInterceptor() { return new ExtensionInterceptor();}
+    public ExtensionInterceptor summaryReportInterceptor() {
+        return new ExtensionInterceptor();
+    }
 
     @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {

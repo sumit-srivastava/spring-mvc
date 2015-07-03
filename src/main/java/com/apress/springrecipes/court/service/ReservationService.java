@@ -14,5 +14,6 @@ public interface ReservationService {
             throws ReservationNotAvailableException;
 
     List<SportType> getAllSportTypes();
+
     public SportType getSportType(int sportTypeId);
 }
