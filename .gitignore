@@ -1,0 +1,17 @@
+target
+*.setting
+*.settings
+*.classpath
+*.project
+*.eclipse.jdt.core.prefs
+*bin
+org.eclipse.m2e.core.prefs
+/extra
+/start-apix-services/logs/*
+*.iws
+/classes
+*.iws
+.idea/
+*.iml
+*.ipr
+dependency-reduced-pom.xml
